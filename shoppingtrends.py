@@ -23,7 +23,7 @@ shopping_data.rename(
 )
 displayhook(shopping_data.head())
 
-# Keeping only anual_income and spending_score for clustering
+# Keeping only annual_income and spending_score for clustering
 shopping_data = shopping_data.drop(['customer_id', 'genre', 'age'], axis = 1)
 shopping_data
 
@@ -33,6 +33,7 @@ import scipy.cluster.hierarchy as shc
 plt.figure(figsize=(10, 5))  
 plt.title("Dendrogram")  
 dend = shc.dendrogram(shc.linkage(shopping_data, method='ward'))
+plt.show()
 
 # Using number of clusters from dendrogram to perform hierarchial clustering 
 from sklearn.cluster import AgglomerativeClustering
@@ -41,6 +42,7 @@ hc = AgglomerativeClustering(n_clusters = 5, affinity='euclidean', linkage='ward
 y_ward = hc.fit_predict(shopping_data)  
 
 plt.scatter(shopping_data.iloc[:,0], shopping_data.iloc[:,1], c=y_ward, s=50)
+plt.show()
 
 # Performing K-means Clustering to visualize results
 # Specifically, finding best value of K between 2 and 10 by analyzing Sum of Squared Error (SSE)
@@ -61,6 +63,7 @@ plt.title('Sum of Squared Error (SSE) in relationship to Number of K')
 plt.xlabel('Number of K')
 plt.xticks([0, 1, 2, 3, 4, 5, 6, 7, 8], ['2', '3', '4', '5', '6', '7', '8', '9', '10'])
 plt.ylabel('SSE')
+plt.show()
 
 # Using scatterplot to visualize results, based on best K value from previous step
 kmeans = KMeans(n_clusters=5)
@@ -71,3 +74,4 @@ plt.scatter(shopping_data.iloc[:, 0], shopping_data.iloc[:, 1], c=y_kmeans, s=50
 
 centers = kmeans.cluster_centers_
 plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5)
+plt.show()
