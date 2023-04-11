@@ -30,9 +30,11 @@ shopping_data
 # Using dendrogram to find number of clusters
 import scipy.cluster.hierarchy as shc
 
-plt.figure(figsize=(10, 5))  
-plt.title("Dendrogram")  
+plt.figure(figsize=(10, 10))  
 dend = shc.dendrogram(shc.linkage(shopping_data, method='ward'))
+plt.title('Dendrogram')  
+plt.xlabel('CustomerID')
+plt.ylabel('Height')
 plt.show()
 
 # Using number of clusters from dendrogram to perform hierarchial clustering 
@@ -42,6 +44,9 @@ hc = AgglomerativeClustering(n_clusters = 5, affinity='euclidean', linkage='ward
 y_ward = hc.fit_predict(shopping_data)  
 
 plt.scatter(shopping_data.iloc[:,0], shopping_data.iloc[:,1], c=y_ward, s=50)
+plt.title('Clustering based on Annual Income and Spending Score')
+plt.xlabel('Annual Income (in thousands of $)')
+plt.ylabel('Spending Score (0-100)')
 plt.show()
 
 # Performing K-means Clustering to visualize results
@@ -74,4 +79,7 @@ plt.scatter(shopping_data.iloc[:, 0], shopping_data.iloc[:, 1], c=y_kmeans, s=50
 
 centers = kmeans.cluster_centers_
 plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5)
+plt.title('Clustering with Centers based on Annual Income and Spending Score')
+plt.xlabel('Annual Income (in thousands of $)')
+plt.ylabel('Spending Score (0-100)')
 plt.show()
