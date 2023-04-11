@@ -2,7 +2,7 @@
 
 ### Overview
 
-I used numpy, pandas, matplotlib, and seaborn to practice clustering data with Python. I analyzed a dataset that contains consumer shopping information to better understand if there were any trends present. Furthermore, I generated various scatter plots, dendographs, and line graphs from my code.
+I used numpy, pandas, matplotlib, and seaborn to practice clustering data with Python. I analyzed a dataset that contains customer shopping information to better understand if there were any trends present. Furthermore, I generated various scatter plots, dendographs, and line graphs from my code.
  
  ### Dataset
  https://raw.githubusercontent.com/zariable/data/master/shopping_data.csv
@@ -14,7 +14,7 @@ I used numpy, pandas, matplotlib, and seaborn to practice clustering data with P
  - Annual Income: In thousands of dollars
  - Spending Score: How often a person spends money in a mall on a scale of 1 to 100, with 100 being the highest spender
   
- ### Conclusion
+ ### Exploratory Data Analysis
  
 ![image](https://user-images.githubusercontent.com/63205351/231301471-77d719dd-386b-42c1-a2b2-53cbd14d88f5.png)
 
@@ -30,6 +30,14 @@ To determine that I chose the optimal number of clusters, I applied k-means and 
 
 ![image](https://user-images.githubusercontent.com/63205351/231301539-f7eb085c-f476-417c-a7a4-5226afde4312.png)
 
-Lastly, I replotted the initial scatterplot with centers, as seen above. From this scatterplot, we can derive that there are 5 distinct clusters. These clusters indicate that the typical spending habits of these consumers can be described as follows:
+Lastly, I replotted the initial scatterplot with centers, as seen above. 
 
-1. 
+### Conclusions
+
+From the above scatterplot, we can derive that there are 5 distinct clusters. These clusters indicate that the typical spending habits of these customers can be described as follows:
+
+1. At ~$30,000 in annual income, there are two types of customers: frugal spenders (spending score = 20) and lavish spenders (spending score = 80).
+2. At ~$55,000 in annual income, majority of these customers average a spending score of 50, which means they fall perfectly in the middle of frugal and lavish spending.
+3. At ~$90,000 in annual income, we can see that the results are similar to point 1, being that there are two types: frugal spenders (spending score = 20) and lavish spenders (spending score = 80).
+
+In my future analysis, I would be curious to see if there is data on each customers' marital status, family size, quantity of items purchased, frequency of mall visits, and time spent in a mall. I believe that this would provide deeper insight on customer shopping trends.
