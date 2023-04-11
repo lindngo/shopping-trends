@@ -18,7 +18,7 @@ I used numpy, pandas, matplotlib, and seaborn to practice clustering data with P
  
 ![image](https://user-images.githubusercontent.com/63205351/231275680-0c5b7302-97da-4f8c-94f6-417b5e0f01ca.png)
 
-Initially, I used a dendrogram to determine the number of clusters present. As seen in the above graph, there are either 3 or 5 clusters. In this case, I moved forward with 5 clusters for my analysis.
+Initially, I used a dendrogram to determine the number of clusters present. As seen in the above graph, there are 3 or 5 clusters. Because there could be two choices, I will later determine the optimal number of clusters needed for my analysis. In this case, I moved forward with 5 clusters.
 
 ![image](https://user-images.githubusercontent.com/63205351/231276541-f7f46ce9-620b-4a93-b0de-fd6e2f600653.png)
 
@@ -26,7 +26,7 @@ I then applied hierarchial clustering using 5 for the number of clusters, as dis
 
 ![image](https://user-images.githubusercontent.com/63205351/231276984-fb183a3b-bea3-48c0-9fdd-f5836d5a1fd1.png)
 
-To determine that I chose the optimal number of clusters, I applied k-means and plotted the results. Using the elbow method, I determined that at 5, there is an inflection point and the SSE line begins to flatten. 
+To determine that I chose the optimal number of clusters, I applied k-means and plotted the results. Using the elbow method, I determined that at 5, there is an the SSE line begins to flatten, indicating that this is the correct number of clusters.
 
 ![image](https://user-images.githubusercontent.com/63205351/231277838-bd2fdeb4-723e-45d3-bd1e-1dc232da0213.png)
 
