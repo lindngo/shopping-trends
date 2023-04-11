@@ -16,18 +16,20 @@ I used numpy, pandas, matplotlib, and seaborn to practice clustering data with P
   
  ### Conclusion
  
-![image](https://user-images.githubusercontent.com/63205351/231275680-0c5b7302-97da-4f8c-94f6-417b5e0f01ca.png)
+![image](https://user-images.githubusercontent.com/63205351/231301471-77d719dd-386b-42c1-a2b2-53cbd14d88f5.png)
 
 Initially, I used a dendrogram to determine the number of clusters present. As seen in the above graph, there are 3 or 5 clusters. Because there could be two choices, I will later determine the optimal number of clusters needed for my analysis. In this case, I moved forward with 5 clusters.
 
-![image](https://user-images.githubusercontent.com/63205351/231276541-f7f46ce9-620b-4a93-b0de-fd6e2f600653.png)
+![image](https://user-images.githubusercontent.com/63205351/231301497-5c26f26a-2172-446a-b750-32973da4228e.png)
 
 I then applied hierarchial clustering using 5 for the number of clusters, as discovered in the previous dendograph. After plotting my results, this graph confirmed my initial thoughts that the dataset contained 5 distinct clusters.
 
-![image](https://user-images.githubusercontent.com/63205351/231276984-fb183a3b-bea3-48c0-9fdd-f5836d5a1fd1.png)
+![image](https://user-images.githubusercontent.com/63205351/231301519-32cdee24-fcb1-4b21-91f3-8ae8c7da9d7e.png)
 
-To determine that I chose the optimal number of clusters, I applied k-means and plotted the results. Using the elbow method, I determined that at 5, there is an the SSE line begins to flatten, indicating that this is the correct number of clusters.
+To determine that I chose the optimal number of clusters, I applied k-means and plotted the results. Using the elbow method, I determined that at point 5, there is an the SSE line begins to flatten, indicating that this is the correct number of clusters.
 
-![image](https://user-images.githubusercontent.com/63205351/231277838-bd2fdeb4-723e-45d3-bd1e-1dc232da0213.png)
+![image](https://user-images.githubusercontent.com/63205351/231301539-f7eb085c-f476-417c-a7a4-5226afde4312.png)
 
-Lastly, I replotted the initial scatterplot with centers.
+Lastly, I replotted the initial scatterplot with centers, as seen above. From this scatterplot, we can derive that there are 5 distinct clusters. These clusters indicate that the typical spending habits of these consumers can be described as follows:
+
+1. 
