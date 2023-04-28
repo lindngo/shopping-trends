@@ -2,7 +2,7 @@
 
 ### Overview
 
-I used numpy, pandas, matplotlib, and seaborn to practice clustering data with Python. I analyzed a dataset that contains customer shopping information to better understand if there were any trends present. Furthermore, I generated various scatter plots, dendographs, and line graphs from my code.
+I used numpy, pandas, matplotlib, and seaborn to practice clustering data with Python. I analyzed a dataset that contains customer shopping information to better understand if there were trends present. Furthermore, I generated various scatter plots, dendographs, and line graphs from my code.
  
  ### Dataset
  https://raw.githubusercontent.com/zariable/data/master/shopping_data.csv
