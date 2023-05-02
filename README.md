@@ -1,20 +1,20 @@
 # Shopping Trends Analysis
 
-### Overview
+## Overview
 
 I used numpy, pandas, matplotlib, and seaborn to practice clustering data with Python. I analyzed a dataset that contains customer shopping information to better understand if there were trends present. Furthermore, I generated various scatter plots, dendographs, and line graphs from my code.
  
- ### Dataset
+ ## Dataset
  https://raw.githubusercontent.com/zariable/data/master/shopping_data.csv
  
- ### Dataset Factors
+ ## Dataset Factors
  - CustomerID
  - Gender
  - Age
  - Annual Income: In thousands of dollars
  - Spending Score: How often a person spends money in a mall on a scale of 1 to 100, with 100 being the highest spender
   
- ### Exploratory Data Analysis
+ ## Exploratory Data Analysis
  
 ![image](https://user-images.githubusercontent.com/63205351/231301471-77d719dd-386b-42c1-a2b2-53cbd14d88f5.png)
 
@@ -32,7 +32,7 @@ To determine that I chose the optimal number of clusters, I applied k-means and 
 
 Lastly, I replotted the initial scatterplot with centers, as seen above. 
 
-### Conclusions
+## Conclusions
 
 From the above scatterplot, we can derive that there are 5 distinct clusters. These clusters indicate that the typical spending habits of these customers can be described as follows:
 
