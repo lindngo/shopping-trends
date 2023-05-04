@@ -18,7 +18,7 @@ I used numpy, pandas, matplotlib, and seaborn to practice clustering data with P
  
 ![image](https://user-images.githubusercontent.com/63205351/231301471-77d719dd-386b-42c1-a2b2-53cbd14d88f5.png)
 
-Initially, I used a dendrogram to determine the number of clusters present. As seen in the above graph, there are 3 or 5 clusters. Because there could be two choices, I will later determine the optimal number of clusters needed for my analysis. In this case, I moved forward with 5 clusters.
+Initially, I used a dendrogram to determine the number of possible clusters present. As seen in the above graph, there are 3 or 5 clusters. Because there could be two choices, I will later determine the optimal number of clusters needed for my analysis. In this case, I moved forward with 5 clusters.
 
 ![image](https://user-images.githubusercontent.com/63205351/231301497-5c26f26a-2172-446a-b750-32973da4228e.png)
 
