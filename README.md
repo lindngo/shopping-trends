@@ -40,4 +40,4 @@ From the above scatterplot, we can derive that there are 5 distinct clusters. Th
 2. At ~$55,000 in annual income, majority of these customers average a spending score of 50, which means they fall perfectly in the middle of frugal and lavish spending.
 3. At ~$90,000 in annual income, we can see that the results are similar to point 1, being that there are two types: frugal spenders (spending score = 20) and lavish spenders (spending score = 80).
 
-In my future analysis, I would be curious to see if there is data on each customers' marital status, family size, quantity of items purchased, frequency of mall visits, and time spent in a mall. I believe that this would provide deeper insight on customer shopping trends.
+In my future analyses, I would be curious to see if there is data on each customers' marital status, family size, quantity of items purchased, frequency of mall visits, and time spent in a mall. I believe that this would provide deeper insight on customer shopping trends.
